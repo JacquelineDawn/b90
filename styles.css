@@ -104,7 +104,7 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('images/DSC00112.jpg');
+    background-image: url('DSC00112.jpg');
     background-size: cover;
     background-position: center;
     display: block; /* Removes default inline space for images */
