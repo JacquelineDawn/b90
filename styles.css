@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+    top: 0;
+    z-index: 10;
+}
+
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+    margin: 0; /* Resets default margins */
+    padding: 0; /* Resets default padding */
+}
+
+.logo {
+    color: white;
+}
+
+.nav {
+    display: flex;
+
+    font-family: 'Monteserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+   
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+} 
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+    position: absolute; /* Position it absolutely */
+    right: 30px; /* Adjust this value as needed */
+    top: 30px; 
+    z-index: 10;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Show the close-hamburger when the nav is active */
+.nav.active ~ .close-hamburger {
+    display: flex;
+}
+
+/* Hide the hamburger when the nav is active */
+.nav.active ~ .hamburger {
+    display: none;
+}
+
+/* Main Content Styles */
+.main-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/DSC00112.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block; /* Removes default inline space for images */
+    
+}
+
+/* the original hot yoga
+ */
+.text-box {
+    position: absolute;
+    bottom: 85px;
+    left: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.text-wrapper {
+    margin-bottom: 20px;
+}
+
+.button {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-family: 'Monteserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.letters {
+    font-family: 'Monteserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+  
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .hamburger,
+    .close-hamburger {
+        display: flex;
+    }
+
+    .nav.active {
+        transform: translateX(0);
+    }
+
+    
+}
