@@ -1,0 +1,115 @@
+@media (max-width: 768px) {
+
+    /* Main Content Styles */
+    .main-content {
+        background-image: none; /* Remove the background image */
+        background-color: #000; /* Optional: Add a solid color as a fallback */
+    }
+
+    /* Text Box Styles */
+    .text-box {
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        height: 100vh;
+        width: 100%;
+        text-align: left;
+        
+    }
+
+    /* Text Styling */
+    .letters {
+        font-family: 'Lora', serif;
+        font-size: 32px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    /* Navigation Styles */
+    .nav {
+        position: fixed;
+        top: 20px;
+        left: 100%; /* Start off-screen to the right */
+        height: 100vh; /* Full height */
+        width: 100vw; /* Full width */
+        background: rgba(0, 0, 0, 1); /* Slight transparency */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.5s ease; /* Slide-in effect */
+        z-index: 11; /* Above overlay */
+       
+    }
+
+    /* Navigation List */
+    .nav-list {
+        flex-direction: column;
+        width: 100%; /* Ensure full width */
+        align-items: center;
+    }
+
+    /* Navigation Items */
+  
+
+    /* Hamburger Menu */
+    .hamburger,
+    .close-hamburger {
+        display: flex;
+        z-index: 12;
+        overflow: visible;
+        margin-top: 24px;
+        margin-left: 8px;
+     
+       
+    }
+
+    /* Active Navigation */
+    .nav.active {
+        left: 0; /* Slide in from the right */
+    }
+
+   
+
+    /* Navigation Links */
+    .nav-item a {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100vw; /* Full width for clickable area */
+        padding: 32px 20px;
+        display: flex; /* Block display for full clickable area */
+        color: #ffff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        justify-content: center; /* Center text horizontally */
+        align-items: center; 
+    }
+
+    .nav-item a:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+    }
+    
+
+
+    .logo {
+        display: flex; /* Use flexbox to arrange items horizontally */
+        align-items: center; /* Vertically center the logo and text */
+        vertical-align: middle; 
+    }
+    
+    .logo img {
+        width: 25px; /* Set the desired width of the logo */
+        height: auto; /* Maintain the aspect ratio of the logo */
+        margin-left: 10px; /* Ensure 10px space between the logo and the text */
+        vertical-align: middle; 
+    }
+    
+    .b90hot {
+        display: none; /* Hides the text on screens smaller than 768px */
+    }
+    
+}
