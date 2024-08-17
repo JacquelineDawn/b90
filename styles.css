@@ -51,22 +51,11 @@ p {
 
 
 /* Overlay Styles */
-/* Add keyframes for background fade-in */
-@keyframes backgroundFadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Main Content Styles */
 .main-content {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('yogis.jpg');
+    background-image: url('/yogis.jpg');
     background-size: cover;
     background-position: center;
     display: flex; /* Use flexbox to center the content */
@@ -74,8 +63,6 @@ p {
     align-items: center; /* Center vertically */
     text-align: center; /* Center text inside */
     margin-top: 0px;
-    opacity: 0; /* Start with invisible background */
-    animation: backgroundFadeIn 3s ease-in-out 1s forwards; /* Fade in after 3 seconds */
 }
 
 .main-content::before {
@@ -119,10 +106,6 @@ header {
     margin: 0;
     line-height: 1;
 }
-
-
-
-
 
 
 
@@ -198,31 +181,7 @@ header {
 
 
 
-/* Main Content Styles */
-.main-content {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url('/yogis.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex; /* Use flexbox to center the content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text inside */
-    margin-top: 0px;
-}
 
-.main-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
 
 
 /* Text Box Styles */
