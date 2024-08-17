@@ -203,7 +203,7 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('images/yogis.jpg');
+    background-image: url('/yogis.jpg');
     background-size: cover;
     background-position: center;
     display: flex; /* Use flexbox to center the content */
