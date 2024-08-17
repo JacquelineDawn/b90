@@ -1,17 +1,53 @@
-/* General Styles */
-* {
-    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
-    margin: 0; /* Resets default margins */
-    padding: 0; /* Resets default padding */
-}
+/* Global Styles */
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
-    overflow-y: hidden;
-    background-color: black;
 }
+
+.home-page,
+.about-page {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: black; /* Background color for pages */
+}
+
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+
+/* Typographic Styles */
+
+h1, h2 {
+    color: #f5f5f5;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 16px; 
+    color: #cacaca;
+    line-height: 1.5;
+}
+
 
 
 /* Overlay Styles */
@@ -21,11 +57,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 9; /* Below the nav */
+    z-index: 9;
 }
 
 #overlay.active {
@@ -33,55 +69,48 @@ body {
     visibility: visible;
 }
 
+
 /* Header Styles */
 header {
-    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; 
+    position: fixed; /* Keeps the header at the top when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width header */
     z-index: 10;
-    margin: 36px;
-   
+    padding: 20px; 
+    background-color: transparent;
+    height: 80px;
 }
 
 .logo {
-    display: flex; /* Use flexbox to arrange items horizontally */
-    align-items: center; /* Vertically center the logo and text */
-    vertical-align: middle; 
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 25px; /* Set the desired width of the logo */
-    height: auto; /* Maintain the aspect ratio of the logo */
-    margin-right: 20px; /* Ensure 10px space between the logo and the text */
-    vertical-align: middle; 
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 9px;
 }
 
 .b90hot {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    color: #f5f5f5; /* Set the text color */
-    margin: 0; /* Remove default margin */
-    line-height: 1; /* Ensure line height doesn’t add extra vertical space */
-    vertical-align: middle; 
-    margin-bottom: 12px;
+    margin: 0;
+    line-height: 1;
 }
+
+
+
+
+
 
 
 /* Navigation Styles */
 .nav {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    letter-spacing: 2px;
-    color: #f5f5f5;
+    align-items: center;
 }
 
 .nav-list {
@@ -96,41 +125,38 @@ header {
 .nav-item a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth fade-in effect */
 }
 
 .nav-item a:hover {
-    text-decoration: underline;
+    color: pink; /* Change text color to pink on hover */
+    border-color: pink; /* Change border color to pink on hover */
+    background-color: rgba(255, 192, 203, 0.2); /* Optional: Add a subtle pink background */
 }
+
+
 
 /* Hamburger Menu Styles */
 .hamburger {
-    display: none;
+    display: none; /* Initially hidden, shown on smaller screens */
     flex-direction: column;
     cursor: pointer;
-    position: absolute; /* Position it absolutely */
-    right: 5px; /* Adjust this value as needed */
-    top: 10px; 
-    z-index: 10;
-    overflow: visible;
-    transform-origin: center;
     position: fixed;
-    margin-right: 40px;
+    right: 5px;
+    top: 10px;
+    z-index: 10;
     padding: 10px;
 }
 
 .hamburger span {
     height: 1px;
-    width: 25px;
+    width: 20px;
     background: white;
     margin: 4px 0;
-
-    border-radius: 0px;
     transition: all 0.3s ease;
-    transform-origin: center;
     position: fixed;
 }
 
-/* Hamburger Menu Active State */
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg);
 }
@@ -143,25 +169,29 @@ header {
     transform: rotate(-45deg);
 }
 
-/* Show the close-hamburger when the nav is active */
 .nav.active ~ .close-hamburger {
     display: flex;
 }
 
-/* Hide the hamburger when the nav is active */
 .nav.active ~ .hamburger {
     display: none;
 }
+
+
 
 /* Main Content Styles */
 .main-content {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('/DSC00112.jpg');
+    background-image: url('images/yogis.jpg');
     background-size: cover;
     background-position: center;
-    display: block; /* Removes default inline space for images */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside */
+    margin-top: 0px;
 }
 
 .main-content::before {
@@ -171,58 +201,101 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value to control darkness */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
 
 /* Text Box Styles */
 .text-box {
-    position: absolute;
-    bottom: 85px;
-    margin: 36px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background: transparent;
+    align-items: center;
+    justify-content: center; /* Ensure content within text-box is centered */
     padding: 20px;
     border-radius: 10px;
     opacity: 0;
     animation: fadeIn 2s forwards;
     z-index: 2;
+    text-align: center; /* Center text inside the text-box */
+    margin-top: 400px;
 }
 
-.text-wrapper {
-    margin-bottom: 40px;
-}
+
 
 /* Button Styles */
 .button {
     background-color: transparent;
     animation: fadeIn 1s forwards;
-    padding: 8px 20px;
+    padding: 6px 24px;
     color: #f5f5f5;
     border: 0.5px solid white;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 3px;
     z-index: 2;
+    margin: 20px 0;
 }
 
-/* Text Styles */
-.letters {
-    font-family: 'Lora', serif;
-    font-size: 28px;
-    font-weight: 100;
-    color: #f5f5f5;
-    letter-spacing: 2px;
-}
+
 
 /* Keyframes */
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+
+}
+
+section > p {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 400;
+	animation: fadeIn 4s ease-in both;
+    color: white;
+}
+
+
+/* animate each letter individually */
+
+section p:first-child {
+	animation-delay: .5s;
+}
+section p:nth-child(2) {
+	animation-delay: 1s;
+}
+section p:nth-child(3) {
+	animation-delay: 1.5s;
+}
+section p:nth-child(4) {
+	animation-delay: 2s;
+}
+
+section p:nth-child(5) {
+	animation-delay: 7s;
+}
+
+/* Keyframe for animation  */
+
+@keyframes fadeIn {
+ 0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }

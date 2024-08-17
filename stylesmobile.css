@@ -2,36 +2,63 @@
 
     /* Main Content Styles */
     .main-content {
-        background-image: none; /* Remove the background image */
-        background-color: #000; /* Optional: Add a solid color as a fallback */
+        background-image: none;
+        background-color: #000; /* Solid background color */
+        padding: 20px; /* Add padding to give space around the content */
+      
+        height: 100vh;
+        width: 100vw;
     }
 
+    .content {
+        padding: 20px;
+    }
+    
     /* Text Box Styles */
     .text-box {
-        bottom: 0px;
-        left: 0px;
         display: flex;
+        flex-direction: column; /* Ensure items stack vertically */
         justify-content: center;
-        align-items: left;
+        align-items: center; /* Center items (including the button) horizontally */
         height: 100vh;
         width: 100%;
-        text-align: left;
+        text-align: left; /* Align text to the left */
+        padding: 0px;
+        border-radius: 10px;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+        z-index: 2;
+        margin-top: 100px;
         
+    }
+    
+    .button {
+        background-color: transparent;
+        animation: fadeIn 1s forwards;
+        border: 0.5px solid white;
+        z-index: 2;
+        margin: 48px 0;
+        align-self: center; /* Center the button horizontally within the flex container */
     }
 
     /* Text Styling */
-    .letters {
+    h1 {
         font-family: 'Lora', serif;
-        font-size: 32px;
+        font-size: 52px;
+        font-weight: 100;
+    }
+    
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
         font-weight: 400;
-        color: white;
-        letter-spacing: 2px;
     }
 
     /* Navigation Styles */
     .nav {
         position: fixed;
         top: 20px;
+        padding: 20px;
         left: 100%; /* Start off-screen to the right */
         height: 100vh; /* Full height */
         width: 100vw; /* Full width */
@@ -41,7 +68,7 @@
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
         z-index: 11; /* Above overlay */
-       
+        transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     /* Navigation List */
@@ -51,27 +78,20 @@
         align-items: center;
     }
 
-    /* Navigation Items */
-  
-
     /* Hamburger Menu */
     .hamburger,
     .close-hamburger {
         display: flex;
         z-index: 12;
         overflow: visible;
-        margin-top: 24px;
-        margin-left: 8px;
-     
-       
+        margin-top: 20px;
+        margin-right: 20px;
     }
 
     /* Active Navigation */
     .nav.active {
         left: 0; /* Slide in from the right */
     }
-
-   
 
     /* Navigation Links */
     .nav-item a {
@@ -92,24 +112,18 @@
     .nav-item a:hover {
         background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
     }
-    
-
 
     .logo {
         display: flex; /* Use flexbox to arrange items horizontally */
         align-items: center; /* Vertically center the logo and text */
         vertical-align: middle; 
+        position: fixed;
+        top: 20px;
     }
     
     .logo img {
         width: 25px; /* Set the desired width of the logo */
         height: auto; /* Maintain the aspect ratio of the logo */
-        margin-left: 10px; /* Ensure 10px space between the logo and the text */
-        vertical-align: middle; 
+        vertical-align: middle;
     }
-    
-    .b90hot {
-        display: none; /* Hides the text on screens smaller than 768px */
-    }
-    
 }
