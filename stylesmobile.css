@@ -1,68 +1,25 @@
 @media (max-width: 768px) {
 
-    /* Main Content Styles */
-    .main-content {
-        background-image: none;
-        background-color: #000; /* Solid background color */
-        padding: 20px; /* Add padding to give space around the content */
-      
-        height: 100vh;
-        width: 100vw;
-    }
 
-    .content {
-        padding: 20px;
-    }
-    
-    /* Text Box Styles */
-    .text-box {
-        display: flex;
-        flex-direction: column; /* Ensure items stack vertically */
-        justify-content: center;
-        align-items: center; /* Center items (including the button) horizontally */
-        height: 100vh;
-        width: 100%;
-        text-align: left; /* Align text to the left */
-        padding: 0px;
-        border-radius: 10px;
-        opacity: 0;
-        animation: fadeIn 2s forwards;
-        z-index: 2;
-        margin-top: 100px;
-        
-    }
-    
-    .button {
-        background-color: transparent;
-        animation: fadeIn 1s forwards;
-        border: 0.5px solid white;
-        z-index: 2;
-        margin: 48px 0;
-        align-self: center; /* Center the button horizontally within the flex container */
-    }
 
-    /* Text Styling */
-    h1 {
-        font-family: 'Lora', serif;
-        font-size: 52px;
-        font-weight: 100;
-    }
-    
-    h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-    }
+  
+body {
+    max-width: 100%;
+}
+
 
     /* Navigation Styles */
     .nav {
+
+    
+    
         position: fixed;
         top: 20px;
         padding: 20px;
         left: 100%; /* Start off-screen to the right */
         height: 100vh; /* Full height */
         width: 100vw; /* Full width */
-        background: rgba(0, 0, 0, 1); /* Slight transparency */
+        background: rgb(43, 16, 180); /* Slight transparency */
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -78,11 +35,13 @@
         align-items: center;
     }
 
+   
+
     /* Hamburger Menu */
     .hamburger,
     .close-hamburger {
         display: flex;
-        z-index: 12;
+        z-index: 100;
         overflow: visible;
         margin-top: 20px;
         margin-right: 20px;
@@ -126,4 +85,7 @@
         height: auto; /* Maintain the aspect ratio of the logo */
         vertical-align: middle;
     }
+
+
+    
 }

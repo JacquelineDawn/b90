@@ -4,179 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: black;
+    max-width: 100%;
 }
 
-.home-page,
-.about-page {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    background-color: black; /* Background color for pages */
-}
-
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 20px;
+body {
+    max-width: 100%;
 }
 
 
-
-/* Typographic Styles */
-
-h1, h2 {
-    color: #f5f5f5;
-    letter-spacing: 3px;
-}
-
-h1 {
-    font-family: 'Lora', serif;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    font-weight: 200;
-}
-
-p {
-    font-family: 'Monteserrat', sans-serif;
-    font-size: 16px; 
-    color: #cacaca;
-    line-height: 1.5;
-}
-
-
-
-/* Overlay Styles */
-.main-content {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url('/yogis.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex; /* Use flexbox to center the content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text inside */
-    margin-top: 0px;
-}
-
-.main-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed; /* Keeps the header at the top when scrolling */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full-width header */
-    z-index: 10;
-    padding: 20px; 
-    background-color: transparent;
-    height: 80px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 20px;
-    margin-right: 20px;
-    margin-top: 9px;
-}
-
-.b90hot {
-    margin: 0;
-    line-height: 1;
-}
-
-
-
-/* Navigation Styles */
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-item {
-    margin-left: 20px;
-}
-
-.nav-item a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth fade-in effect */
-}
-
-.nav-item a:hover {
-    color: pink; /* Change text color to pink on hover */
-    border-color: pink; /* Change border color to pink on hover */
-    background-color: rgba(255, 192, 203, 0.2); /* Optional: Add a subtle pink background */
-}
-
-
-
-/* Hamburger Menu Styles */
-.hamburger {
-    display: none; /* Initially hidden, shown on smaller screens */
-    flex-direction: column;
-    cursor: pointer;
-    position: fixed;
-    right: 5px;
-    top: 10px;
-    z-index: 10;
-    padding: 10px;
-}
-
-.hamburger span {
-    height: 1px;
-    width: 20px;
-    background: white;
-    margin: 4px 0;
-    transition: all 0.3s ease;
-    position: fixed;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg);
-}
-
-.nav.active ~ .close-hamburger {
-    display: flex;
-}
-
-.nav.active ~ .hamburger {
-    display: none;
+.schedule {
+    border: solid 2px white; 
+    margin-top: 180px; 
 }
 
 
@@ -184,96 +23,47 @@ header {
 
 
 
-/* Text Box Styles */
-.text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Ensure content within text-box is centered */
-    padding: 20px;
-    border-radius: 10px;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-    z-index: 2;
-    text-align: center; /* Center text inside the text-box */
-    margin-top: 400px;
-}
-
-
-
-/* Button Styles */
-.button {
-    background-color: transparent;
-    animation: fadeIn 1s forwards;
-    padding: 6px 24px;
-    color: #f5f5f5;
-    border: 0.5px solid white;
-    z-index: 2;
-    margin: 20px 0;
-}
-
-
-
-/* Keyframes */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
 
 
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-section {
-    display: flex;
-
-}
-
-section > p {
-    font-family: 'Lora', serif;
-    font-size: 24px;
-    font-weight: 400;
-	animation: fadeIn 4s ease-in both;
-    color: white;
-}
 
 
-/* animate each letter individually */
 
-section p:first-child {
-	animation-delay: .5s;
-}
-section p:nth-child(2) {
-	animation-delay: 1s;
-}
-section p:nth-child(3) {
-	animation-delay: 1.5s;
-}
-section p:nth-child(4) {
-	animation-delay: 2s;
-}
 
-section p:nth-child(5) {
-	animation-delay: 7s;
-}
 
-/* Keyframe for animation  */
 
-@keyframes fadeIn {
- 0% {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	100% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

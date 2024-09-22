@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+  }
+  
+  
+  .CLASS-TYPES {
+
+
+    margin-top: 180px; 
+  
+    padding-left: 120px; 
+    padding-right: 120px;
+    
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: flex-start;
+    gap: 180px;
+    position: relative;
+  }
+  
+  .CLASS-TYPES .CLASS-TYPES-TITLE {
+    position: relative;
+    align-self: stretch;
+    height: 39px;
+    margin-top: -1px;
+    font-family: "Nunito", Helvetica;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 42px;
+    letter-spacing: 8.4px;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 0;
+    -webkit-box-orient: vertical;
+  }
+  
+  .CLASS-TYPES .div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .CLASS-TYPES .div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .CLASS-TYPES .vector-stroke {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .CLASS-TYPES .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pavanam", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    line-height: normal;
+  }
+  
+  .CLASS-TYPES .p {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pavanam", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: normal;
+  }
+  
+  .CLASS-TYPES .BUTTON-SCHEDULE {
+    position: relative;
+    width: 147px;
+    height: 43px;
+  }
+  
+  .CLASS-TYPES .frame {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 40px;
+    position: relative;
+    border: 1px solid;
+    border-color: #ffffff;
+  }
+  
+  .CLASS-TYPES .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Pavanam", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2.16px;
+    line-height: normal;
+  }
+  
