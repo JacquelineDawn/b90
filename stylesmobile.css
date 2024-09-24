@@ -1,0 +1,88 @@
+@media (max-width: 768px) {
+
+
+  
+
+
+
+    /* Navigation Styles */
+    .nav {
+
+    
+    
+        position: fixed;
+        top: 20px;
+        padding: 20px;
+        left: 100%; /* Start off-screen to the right */
+        height: 100vh; /* Full height */
+        width: 100%; /* Full width */
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.5s ease; /* Slide-in effect */
+        z-index: 11; /* Above overlay */
+        transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Navigation List */
+    .nav-list {
+        flex-direction: column;
+        width: 100%; /* Ensure full width */
+        align-items: center;
+    }
+
+   
+
+    /* Hamburger Menu */
+    .hamburger,
+    .close-hamburger {
+        display: flex;
+        z-index: 100;
+        overflow: visible;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    /* Active Navigation */
+    .nav.active {
+        left: 0; /* Slide in from the right */
+    }
+
+    /* Navigation Links */
+    .nav-item a {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100vw; /* Full width for clickable area */
+        padding: 32px 20px;
+        display: flex; /* Block display for full clickable area */
+        color: #ffff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        justify-content: center; /* Center text horizontally */
+        align-items: center; 
+    }
+
+    .nav-item a:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+    }
+
+    .logo {
+        display: flex; /* Use flexbox to arrange items horizontally */
+        align-items: center; /* Vertically center the logo and text */
+        vertical-align: middle; 
+        position: fixed;
+        top: 20px;
+    }
+    
+    .logo img {
+        width: 25px; /* Set the desired width of the logo */
+        height: auto; /* Maintain the aspect ratio of the logo */
+        vertical-align: middle;
+    }
+
+
+    
+}
