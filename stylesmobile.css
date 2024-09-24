@@ -28,6 +28,7 @@
         width: 100vw;  /* Ensure full width */
         align-items: center;
       position: fixed;
+      margin-top: 40px; 
     }
 
     /* Hamburger Menu */
