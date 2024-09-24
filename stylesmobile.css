@@ -14,7 +14,7 @@
         padding: 10px;
         left: 100%; /* Start off-screen to the right */
         height: 100vh; /* Full height */
-        width: 100%; /* Full width */
+        width: 100vw; /* Full width */
         margin-left: 0px; 
         flex-direction: column;
         align-items: center;
