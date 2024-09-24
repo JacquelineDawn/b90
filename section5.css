@@ -12,28 +12,20 @@ body {
     
     display: flex;
     flex-direction: column;
-    max-width: 100%; 
+   
     align-items: end;
     
     gap: 180px;
     position: relative;
 
+width: 100%; 
+
    
-    max-width: 100vw; 
   }
 
 
   
-  .CLASS-TYPES .CLASS-TYPES-TITLE {
-
-
-
-    max-width: 100vw; 
-
-   
-  
-  
-  }
+ 
   
   .CLASS-TYPES .div {
     display: flex;
@@ -44,10 +36,12 @@ body {
     align-self: stretch;
     flex: 0 0 auto;
 
-    max-width: 100vw; 
+ 
+
+
 
    
-    width: 1420px; 
+  
   }
   
   .CLASS-TYPES .div-2 {
