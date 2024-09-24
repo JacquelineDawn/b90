@@ -19,6 +19,7 @@
         transition: left 1s ease; /* Slide-in effect */
         z-index: 99; /* Above overlay */
         transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0.8; 
     }
 
     /* Navigation List */
