@@ -57,7 +57,7 @@
     .nav-item a {
        
         width: 100vw; /* Full width for clickable area */
-        padding: 32px 20px;
+        margin: 32px 20px;
         display: flex; /* Block display for full clickable area */
        
         text-decoration: none;
