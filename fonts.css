@@ -40,17 +40,28 @@ h1 {
   
     h4 { 
       font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 100;
     font-style: normal;
     line-height: 1.7;
-    letter-spacing: 2.88px;
+    letter-spacing: 2.2px;
     color: #e2e2e2;
    
     }
 
 
     h5 { 
+      font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      color: #cdcdcd;
+      font-size: 14px;
+      letter-spacing: 2.2px;
+      line-height: 1.7;
+     
+  
+    }
+
+    h6 { 
       font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
       font-weight: 500;
       color: #cdcdcd;
@@ -251,6 +262,18 @@ h1 {
             font-weight: 100;
             color: #bfbfbf;
             font-size: 18px;
+            letter-spacing: 1.44px;
+            line-height: 1.9;
+            
+           
+        
+          }
+
+          h6 { 
+            font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+            font-weight: 100;
+            color: #bfbfbf;
+            font-size: 24px;
             letter-spacing: 1.44px;
             line-height: 1.9;
             
