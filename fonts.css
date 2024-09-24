@@ -4,21 +4,25 @@
 
 h1 { 
     font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    color: #ebebeb;
-    font-size: 36px;
+    font-weight: 50;
+    color: #ffffff;
+    font-size: 28.8px;
     letter-spacing: 2.88px;
-    line-height: 40px;
+    line-height: 1.6px;
     text-transform: uppercase;
   
   }
+
+  /* intro text */
 
   h2 { 
     font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
     font-weight: 100;
     color: #ebebeb;
     font-size: 24px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.3em;
+    line-height: 1.7px;
+
 
 
   }
@@ -26,9 +30,9 @@ h1 {
       font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
       font-weight: 100;
       color: #e2e2e2;
-      font-size: 18px;
-      letter-spacing: 0.12em; 
-      line-height: 40px;
+      font-size: 17.8px;
+      line-height: 1.7;
+      letter-spacing: 1.8px;
     
      
   
@@ -36,11 +40,11 @@ h1 {
   
     h4 { 
       font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 100;
     font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.44px;
+    line-height: 1.7;
+    letter-spacing: 2.88px;
     color: #e2e2e2;
    
     }
@@ -48,11 +52,11 @@ h1 {
 
     h5 { 
       font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
-      font-weight: 100;
-      color: #e2e2e2;
-      font-size: 12px;
-      letter-spacing: 1.44px;
-      
+      font-weight: 500;
+      color: #cdcdcd;
+      font-size: 14px;
+      letter-spacing: 2.2px;
+      line-height: 1.7;
      
   
     }
@@ -198,10 +202,60 @@ h1 {
 
         /* Text Styling */
       
+        h1 { 
+          font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          color: #ebebeb;
+          font-size: 18px;
+          letter-spacing: 2.88px;
+          line-height: 56px;
+          text-transform: uppercase;
         
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 13px;
-            font-weight: 400;
         }
+      
+        h2 { 
+          font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          color: #f0f0f0;
+          font-size: 18px;
+          letter-spacing: 0.12em;
+      
+      
+        }
+          h3 { 
+            font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+            font-weight: 100;
+            color: #f3f3f3;
+            font-size: 18px;
+            letter-spacing: 0.12em; 
+            line-height: 40px;
+          
+           
+        
+          }
+        
+          h4 { 
+            font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+          font-size: 12px;
+          font-weight: 100;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1.44px;
+          color: #f3f3f3;
+         
+          }
+      
+      
+          h5 { 
+            font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
+            font-weight: 100;
+            color: #bfbfbf;
+            font-size: 18px;
+            letter-spacing: 1.44px;
+            line-height: 1.9;
+            
+           
+        
+          }
+      
     }
