@@ -20,13 +20,5 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleMenu();
     });
 
-    // Optional: Change header background on scroll
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+
 });
