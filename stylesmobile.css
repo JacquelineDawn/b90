@@ -17,8 +17,8 @@
         align-items: center;
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 120; /* Above overlay */
-        transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 99; /* Above overlay */
+        transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     /* Navigation List */
