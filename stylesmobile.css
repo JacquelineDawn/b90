@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
 
 
   
@@ -7,19 +7,24 @@
 
     /* Navigation Styles */
     .nav {
+
+    
+    
         position: fixed;
-        padding: 10px;
+        display: block; 
+        margin-top: 20px; 
+        padding: 0px;
         left: 100%; /* Start off-screen to the right */
         height: 100vh; /* Full height */
         width: 100vw; /* Full width */
-        margin-left: 0px;  
+        margin-left: 0px; 
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: left 1s ease; /* Slide-in effect */
-        z-index: 99; /* Above overlay */
+        transition: left 0.5s ease; /* Slide-in effect */
+        z-index: 11; /* Above overlay */
         transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
-      opacity: 0.8; 
+        overflow-x: hidden;
     }
 
     /* Navigation List */
@@ -27,7 +32,10 @@
         flex-direction: column;
         width: 100%; /* Ensure full width */
         align-items: center;
+        overflow-x: hidden;
     }
+
+   
 
     /* Hamburger Menu */
     .hamburger,
@@ -42,13 +50,16 @@
     /* Active Navigation */
     .nav.active {
         left: 0; /* Slide in from the right */
+        
     }
 
     /* Navigation Links */
     .nav-item a {
+       
         width: 100vw; /* Full width for clickable area */
         padding: 32px 20px;
         display: flex; /* Block display for full clickable area */
+       
         text-decoration: none;
         transition: background-color 0.3s ease;
         justify-content: center; /* Center text horizontally */
