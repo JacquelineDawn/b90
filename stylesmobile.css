@@ -7,9 +7,6 @@
 
     /* Navigation Styles */
     .nav {
-
-    
-    
         position: fixed;
         padding: 10px;
         left: 100%; /* Start off-screen to the right */
@@ -20,7 +17,7 @@
         align-items: center;
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 100; /* Above overlay */
+        z-index: 120; /* Above overlay */
         transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -30,8 +27,6 @@
         width: 100%; /* Ensure full width */
         align-items: center;
     }
-
-   
 
     /* Hamburger Menu */
     .hamburger,
@@ -50,14 +45,9 @@
 
     /* Navigation Links */
     .nav-item a {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400;
         width: 100vw; /* Full width for clickable area */
         padding: 32px 20px;
         display: flex; /* Block display for full clickable area */
-        color: #ffff;
         text-decoration: none;
         transition: background-color 0.3s ease;
         justify-content: center; /* Center text horizontally */
