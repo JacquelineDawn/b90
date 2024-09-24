@@ -11,7 +11,8 @@
 header { 
 
     width: 100vw; /* Ensure it covers the full width */
-    overflow-x: hidden; /
+    overflow-x: hidden; 
+
 
 }
 
@@ -46,7 +47,12 @@ body {
 
      
         max-width: 100vw; /* Ensure it covers the full width */
-        overflow-x: hidden; /
+        overflow-x: hidden; 
+
+
+        padding: 10px; 
+
+      
 
     }
 

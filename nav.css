@@ -14,7 +14,7 @@ header {
     left: 0;
     width: 100%; /* Full-width header */
     z-index: 10;
-    padding: 40px; 
+    padding: 20px; 
     background-color: black;
     height: 80px;
 }
