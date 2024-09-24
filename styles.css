@@ -32,7 +32,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     * {
         box-sizing: border-box;
