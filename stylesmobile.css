@@ -8,11 +8,9 @@
     /* Navigation Styles */
     .nav {
 
-    
-    
+
         position: fixed;
         display: block; 
-        margin-top: 20px; 
         padding: 0px;
         left: 100%; /* Start off-screen to the right */
         height: 100vh; /* Full height */
@@ -25,6 +23,7 @@
         z-index: 11; /* Above overlay */
         transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     /* Navigation List */
@@ -32,8 +31,14 @@
         flex-direction: column;
         width: 100%; /* Ensure full width */
         align-items: center;
+        justify-content: center; 
+        
         overflow-x: hidden;
+        overflow-y: hidden;
+        height: 100vh; 
+
     }
+
 
    
 
@@ -50,25 +55,26 @@
     /* Active Navigation */
     .nav.active {
         left: 0; /* Slide in from the right */
+        overflow-y: hidden;
         
     }
 
+   
+
     /* Navigation Links */
     .nav-item a {
-       
+        
+    
         width: 100vw; /* Full width for clickable area */
-        margin: 32px 20px;
+        padding: 20px 0px;
         display: flex; /* Block display for full clickable area */
-       
         text-decoration: none;
-        transition: background-color 0.3s ease;
+       
         justify-content: center; /* Center text horizontally */
         align-items: center; 
     }
 
-    .nav-item a:hover {
-        background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
-    }
+   
 
     .logo {
         display: flex; /* Use flexbox to arrange items horizontally */
