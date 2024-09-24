@@ -24,11 +24,8 @@
     /* Navigation List */
     .nav-list {
         flex-direction: column;
-        height: 100vh; /* Full height */
-        width: 100vw;  /* Ensure full width */
+        width: 100%; /* Ensure full width */
         align-items: center;
-      position: fixed;
-      margin-top: 40px; 
     }
 
     /* Hamburger Menu */
