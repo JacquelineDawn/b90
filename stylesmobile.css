@@ -2,7 +2,9 @@
 
 
   
-
+    .no-scroll {
+        overflow: hidden !important;
+    }
 
 
     /* Navigation Styles */
@@ -81,7 +83,7 @@
         align-items: center; /* Vertically center the logo and text */
         vertical-align: middle; 
         position: fixed;
-        top: 20px;
+        top: 32px;
 
     }
     
@@ -90,6 +92,8 @@
         height: auto; /* Maintain the aspect ratio of the logo */
         vertical-align: middle;
     }
+
+   
 
 
     
