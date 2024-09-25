@@ -20,19 +20,19 @@ body {
         max-width: 100%; /* Already set */
         width: 100vw; /* Ensure it covers the full width */
         overflow-x: hidden; /* Prevent horizontal scrolling */
-
+     
 
     }
 
 
 
 .schedule {
-    border: solid 2px white; 
-    margin-top: 180px; 
+    
+    margin-top: 80px; 
 }
 
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
 
     * {
         box-sizing: border-box;
@@ -58,8 +58,10 @@ body {
 
     body {
        
-        width: 100vw; /* Ensure it covers the full width */
+        width: 100vw; 
+        height: 100vh;/* Ensure it covers the full width */
         overflow-x: hidden; /* Prevent horizontal scrolling */
+       
 
 
     }
