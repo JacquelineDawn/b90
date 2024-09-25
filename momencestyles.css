@@ -8,12 +8,9 @@
 /* Schedule Section */
 .schedule {
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     align-items: center;
     justify-content: center; /* Centers content within the schedule */
-    opacity: 0; /* Initially hidden, will fade in */
-    animation: fadeIn 2s forwards;
-    z-index: 2;
     margin-top: 120px;
 }
 
@@ -23,3 +20,41 @@
 
 
 
+
+
+/* "day list " ,top of schedule */
+.momence-host-schedule-layout {
+    font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif !important;
+    text-transform: uppercase !important;
+  
+   
+}
+
+.momence-plugin-host-schedule {
+
+    font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif !important;
+    text-transform: uppercase !important;
+
+}
+
+
+/*    */
+.momence-event_type_select-button, .sc-1cwk5zu-1 {
+    visibility: hidden;
+}
+
+/*    */
+.momence-event_type_select-button, .sc-1cwk5zu-2 {
+    visibility: hidden;
+}
+
+/*    */
+.momence-event_type_select-button {
+    visibility: hidden;
+}
+
+
+/* "classes" ,top of schedule */
+.momence-event_type_select, .sc-1cwk5zu-0 {
+    visibility: hidden;
+}
