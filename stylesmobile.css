@@ -16,11 +16,11 @@
         justify-content: center; /* Center items vertically */
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */
-        background-color: #fff; /* Add a background color if needed */
+        background-color: black; /* Add a background color if needed */
         transition: left 0.5s ease; /* Slide-in effect */
         z-index: 20; /* Above other elements */
         overflow: hidden; /* Prevent scroll in the nav */
-        background-color: red; 
+     
     }
 
     /* Navigation List */
@@ -35,7 +35,7 @@
         padding: 0; /* Remove default padding */
         overflow: hidden; /* Prevent scroll in the list */
 
-        background-color: red; 
+        background-color: black;
     }
 
     /* Hamburger Menu */
@@ -64,7 +64,7 @@
         align-items: center; /* Center text vertically */
         background-color: #fff; /* Optional: add background to links */
 
-        background-color: red; 
+        background-color: black; 
     }
 
     /* Logo Styling */
