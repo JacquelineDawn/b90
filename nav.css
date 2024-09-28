@@ -14,7 +14,7 @@ header {
     left: 0;
     width: 100%; /* Full-width header */
     z-index: 10;
-    padding: 20px; 
+    padding: 40px; 
     background-color: black;
     height: 80px;
 }
@@ -22,6 +22,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+   
 }
 
 .logo img {
@@ -30,10 +31,7 @@ header {
     margin-top: 9px;
 }
 
-.b90hot {
-    margin: 0;
-    line-height: 1;
-}
+
 
 
 
@@ -49,24 +47,17 @@ header {
 .nav-list {
     display: flex;
     list-style: none;
+    align-items: center;
+   
 }
 
 .nav-item {
-    margin-left: 20px;
+    margin-left: 0px;
     padding: 20px; 
 }
 
-.nav-item a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth fade-in effect */
-}
 
-.nav-item a:hover {
-    color: pink; /* Change text color to pink on hover */
-    border-color: pink; /* Change border color to pink on hover */
-    background-color: rgba(255, 192, 203, 0.2); /* Optional: Add a subtle pink background */
-}
+
 
 
 
