@@ -13,7 +13,7 @@ header {
     top: 0;
     left: 0;
     width: 100%; /* Full-width header */
-    z-index: 10;
+    z-index: 15;
     padding: 40px; 
     background-color: black;
     height: 80px;
@@ -71,7 +71,7 @@ header {
     position: fixed;
     right: 5px;
     top: 10px;
-    z-index: 12;
+    z-index: 15;
     padding: 10px;
 }
 
