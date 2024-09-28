@@ -17,7 +17,7 @@
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */
         background-color: black; /* Add a background color if needed */
-        transition: left 0.5s ease; /* Slide-in effect */
+        transition: left 0.75s ease; /* Slide-in effect */
         z-index: 20; /* Above other elements */
         overflow: hidden; /* Prevent scroll in the nav */
      
