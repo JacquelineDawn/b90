@@ -1,10 +1,11 @@
 
 .labeldiv {
-  border-top: solid 0.25px rgb(176, 165, 165); 
+  border-top: solid 0.25px rgb(129, 129, 129); 
   width: 100vw;
   height: 180px;
 margin-top: 120px;
 padding-top: 0px;
+
 display: flex; 
 align-items: center; 
 justify-content: left;
@@ -13,7 +14,7 @@ justify-content: left;
 .label {
     width: 100%;
     height: auto;
-    margin-top: 20px; 
+    margin-top: 0px; 
     margin-left: 120px; 
     margin-right: 120px;
     margin-bottom: 20px;
@@ -45,6 +46,9 @@ justify-content: left;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     text-align: center; /* Center text inside the flex items */
     padding-top: 40px; 
+    padding-bottom: 40px;
+
+  
 
   }
   
@@ -116,6 +120,8 @@ justify-content: center;
     padding-top: 0px;
     display: flex; 
     align-items: center; 
+
+   
     }
     
     .label {
@@ -136,6 +142,7 @@ justify-content: center;
       .centerlabeldiv {
 
         margin-top: 180px; 
+        margin-bottom: 0px;
         border-top: solid 0.25px rgb(176, 165, 165); 
         height: auto; 
     
@@ -147,7 +154,7 @@ justify-content: center;
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
         text-align: center; /* Center text inside the flex items */
         padding-top: 40px; /* Add some padding for readability */
-
+        padding-bottom: 40px;
       }
     
      
@@ -162,6 +169,8 @@ justify-content: center;
     display: flex; 
     align-items: center; 
     justify-content: center;
+
+
 
 
     
@@ -190,6 +199,7 @@ justify-content: center;
     align-items: center; 
     justify-content: center;
 
+  
 
 
     
