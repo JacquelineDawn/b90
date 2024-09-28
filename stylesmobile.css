@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 100; /* Above overlay */
+        z-index: 10; /* Above overlay */
        
         overflow-x: hidden;
         overflow-y: hidden;
@@ -39,7 +39,7 @@
         overflow-y: hidden;
         height: 100vh; 
 
-        z-index: 100;
+        z-index: 10;
 
     }
 
