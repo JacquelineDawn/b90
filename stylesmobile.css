@@ -1,104 +1,76 @@
-    @media screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
-
-  
+    /* Disable scrolling on the body when necessary */
     .no-scroll {
         overflow: hidden !important;
     }
 
-
     /* Navigation Styles */
     .nav {
-
-
         position: fixed;
-        display: block; 
-        padding: 0px;
-        left: 100%; /* Start off-screen to the right */
-        height: 100vh; /* Full height */
-        width: 100vw; /* Full width */
-        margin-left: 0px; 
-        flex-direction: column;
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
         align-items: center;
         justify-content: center;
+        padding: 0;
+        left: 100%; /* Start off-screen to the right */
+        top: 0; /* Ensure the navigation covers the entire height */
+        height: 100vh; /* Full height */
+        width: 100vw; /* Full width */
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 10; /* Above overlay */
-       
-        overflow-x: hidden;
-        overflow-y: hidden;
+        z-index: 20; /* Above overlay */
+        overflow: hidden; /* Prevent scroll in the nav */
     }
 
     /* Navigation List */
     .nav-list {
-        flex-direction: column;
-        width: 100%; /* Ensure full width */
-        align-items: center;
-        justify-content: center; 
-        
-        overflow-x: hidden;
-        overflow-y: hidden;
-        height: 100vh; 
-
-        z-index: 10;
-
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        height: 100vh; /* Full height for centering */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        overflow: hidden; /* Prevent scroll in the list */
     }
-
-
-   
 
     /* Hamburger Menu */
     .hamburger,
     .close-hamburger {
         display: flex;
-        z-index: 100;
-        overflow: visible;
+        z-index: 100; /* Above navigation */
         margin-top: 20px;
         margin-right: 20px;
+        cursor: pointer; /* Pointer cursor for interaction */
     }
 
     /* Active Navigation */
     .nav.active {
         left: 0; /* Slide in from the right */
-        overflow-y: hidden;
-
-        z-index: 100;
-        
     }
-
-   
 
     /* Navigation Links */
     .nav-item a {
-        
-    
         width: 100vw; /* Full width for clickable area */
-        padding: 20px 0px;
-        display: flex; /* Block display for full clickable area */
-        text-decoration: none;
-       
+        padding: 20px 0; /* Vertical padding for spacing */
+        display: flex; /* Flexbox for alignment */
+        text-decoration: none; /* Remove underline */
         justify-content: center; /* Center text horizontally */
-        align-items: center; 
+        align-items: center; /* Center text vertically */
     }
 
-   
-
+    /* Logo Styling */
     .logo {
-        display: flex; /* Use flexbox to arrange items horizontally */
+        display: flex; /* Use flexbox for alignment */
         align-items: center; /* Vertically center the logo and text */
-        vertical-align: middle; 
-        position: fixed;
-        top: 32px;
-
+        position: fixed; /* Fixed position */
+        top: 32px; /* Adjust position as needed */
+        left: 20px; /* Adjust position as needed */
+        z-index: 30; /* Above navigation */
     }
-    
+
     .logo img {
-        width: 25px; /* Set the desired width of the logo */
-        height: auto; /* Maintain the aspect ratio of the logo */
-        vertical-align: middle;
+        width: 25px; /* Set desired width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        vertical-align: middle; /* Align with text */
     }
-
-   
-
-
-    
 }
