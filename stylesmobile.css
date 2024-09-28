@@ -20,6 +20,7 @@
         transition: left 0.5s ease; /* Slide-in effect */
         z-index: 20; /* Above other elements */
         overflow: hidden; /* Prevent scroll in the nav */
+        background-color: red; 
     }
 
     /* Navigation List */
