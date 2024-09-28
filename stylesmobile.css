@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 11; /* Above overlay */
+        z-index: 20; /* Above overlay */
        
         overflow-x: hidden;
         overflow-y: hidden;
