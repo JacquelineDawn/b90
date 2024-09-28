@@ -28,8 +28,31 @@ body {
 
 .schedule {
     
-    margin-top: 80px; 
+    margin-top: 0px; 
+    border-top: solid 0.25px rgb(143, 143, 143); 
+  
 }
+
+/* text fade in  */
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between text elements */
+  
+}
+
+
+.fade-text {
+    opacity: 0;
+    font-size: 24px; /* Adjust size as needed */
+    transition: opacity 8s ease; /* Duration of fade-in */
+}
+
+.visible {
+    opacity: 1;
+}
+
 
 
 @media (max-width: 768px) {
@@ -65,6 +88,14 @@ body {
 
 
     }
+
+    .schedule {
+    
+        margin-top: 0px; 
+        border-top: solid 0.25px rgb(143, 143, 143); 
+      
+    }
+    
 
 
 }
