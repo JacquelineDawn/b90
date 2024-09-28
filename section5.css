@@ -9,15 +9,14 @@ body {
     margin-top: 80px; 
     padding-left: 120px; 
     padding-right: 120px;
+    padding-bottom: 80px;
     
     display: flex;
     flex-direction: column;
-   
     align-items: end;
     
-    gap: 180px;
+    gap: 120px;
     position: relative;
-        padding-bottom: 80px;
 
 width: 100%; 
 

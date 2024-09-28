@@ -65,14 +65,14 @@
 @media (max-width: 768px){
 
     .img1 {
-        border: solid 2px pink;
+       
         position: absolute;
         height: 220px; 
         width: 220px;  
         margin-top: 100px; 
         margin-left: 0px; 
-        z-index: 10; 
-        visibility: hidden; 
+        z-index: 0; 
+        visibility: collapse; 
     }
     
     
@@ -83,18 +83,18 @@
         width: 0px;  
         margin-top: 40px; 
         margin-left: 0px; 
-        z-index: 10; 
-        visibility: hidden; 
+        z-index: 0; 
+        visibility: collapse; 
     }
     
     .img3 {
-        border: solid 2px pink;
+     
         position: absolute;
         height: 100px; 
         width: 0px;  
         margin-top: 40px; 
         margin-left: 0px; 
-        z-index: 10; 
+        z-index: 0; 
         visibility: collapse;
     }
 

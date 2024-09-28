@@ -23,7 +23,7 @@
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
         z-index: 11; /* Above overlay */
-        transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+       
         overflow-x: hidden;
         overflow-y: hidden;
     }
