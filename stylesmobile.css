@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 20; /* Above overlay */
+        z-index: 100; /* Above overlay */
        
         overflow-x: hidden;
         overflow-y: hidden;
@@ -38,6 +38,8 @@
         overflow-x: hidden;
         overflow-y: hidden;
         height: 100vh; 
+
+        z-index: 100;
 
     }
 
@@ -58,6 +60,8 @@
     .nav.active {
         left: 0; /* Slide in from the right */
         overflow-y: hidden;
+
+        z-index: 100;
         
     }
 
