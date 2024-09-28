@@ -1,4 +1,5 @@
 @media only screen and (max-width: 767px) {
+    
 
     /* Disable scrolling on the body when necessary */
     .no-scroll {
@@ -23,6 +24,10 @@
      
     }
 
+   #home-dis {
+        visibility:visible;
+     
+     }
     /* Navigation List */
     .nav-list {
         display: flex; /* Use flexbox for alignment */
