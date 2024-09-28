@@ -7,18 +7,18 @@
 
     /* Navigation Styles */
     .nav {
-        position: fixed;
+        position: fixed; /* Fix the navigation to the viewport */
+        top: 0; /* Align to the top */
+        left: 100%; /* Start off-screen to the right */
         display: flex; /* Use flexbox for alignment */
         flex-direction: column; /* Stack items vertically */
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        left: 100%; /* Start off-screen to the right */
-        top: 0; /* Ensure the navigation covers the entire height */
-        height: 100vh; /* Full height */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
         width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
+        background-color: #fff; /* Add a background color if needed */
         transition: left 0.5s ease; /* Slide-in effect */
-        z-index: 20; /* Above overlay */
+        z-index: 20; /* Above other elements */
         overflow: hidden; /* Prevent scroll in the nav */
     }
 
@@ -30,6 +30,8 @@
         height: 100vh; /* Full height for centering */
         align-items: center; /* Center items horizontally */
         justify-content: center; /* Center items vertically */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
         overflow: hidden; /* Prevent scroll in the list */
     }
 
@@ -38,8 +40,9 @@
     .close-hamburger {
         display: flex;
         z-index: 100; /* Above navigation */
-        margin-top: 20px;
-        margin-right: 20px;
+        position: fixed; /* Fixed position */
+        top: 20px; /* Adjust position */
+        right: 20px; /* Adjust position */
         cursor: pointer; /* Pointer cursor for interaction */
     }
 
@@ -56,6 +59,7 @@
         text-decoration: none; /* Remove underline */
         justify-content: center; /* Center text horizontally */
         align-items: center; /* Center text vertically */
+        background-color: #fff; /* Optional: add background to links */
     }
 
     /* Logo Styling */
@@ -63,7 +67,7 @@
         display: flex; /* Use flexbox for alignment */
         align-items: center; /* Vertically center the logo and text */
         position: fixed; /* Fixed position */
-        top: 32px; /* Adjust position as needed */
+        top: 20px; /* Adjust position as needed */
         left: 20px; /* Adjust position as needed */
         z-index: 30; /* Above navigation */
     }
