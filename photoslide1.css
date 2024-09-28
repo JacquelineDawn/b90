@@ -1,0 +1,39 @@
+.box {
+    
+
+
+
+
+display: flex; 
+justify-content: center;
+
+height: 280px; 
+
+margin-top: 80px; 
+margin-bottom: 80px; 
+
+  }
+  
+  .img-1 {
+    margin: 32px; 
+  }
+
+  
+  @media (max-width: 768px){
+
+  .box {
+
+    flex-direction:column;
+    flex-wrap: wrap;
+
+    height: 220px; 
+
+margin-top: 0px; 
+margin-bottom: 0px; 
+  }
+
+  .img-1 {
+    margin: 0px; 
+  }
+
+}
