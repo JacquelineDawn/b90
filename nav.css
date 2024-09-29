@@ -1,7 +1,4 @@
-#home-dis {
-   visibility: hidden; 
 
-}
 
 
 /* Header Styles */
@@ -26,6 +23,10 @@ header {
     display: flex;
     align-items: center;
    
+}
+
+#home-dis {
+    visibility:hidden;
 }
 
 .logo img {
@@ -72,15 +73,15 @@ header {
     flex-direction: column;
     cursor: pointer;
     position: fixed;
-    right: 5px;
-    top: 10px;
+    right: 35px;
+    top: 15px;
     z-index: 12;
     padding: 10px;
 }
 
 .hamburger span {
     height: 1px;
-    width: 20px;
+    width: 30px;
     background: white;
     margin: 4px 0;
     transition: all 0.3s ease;
