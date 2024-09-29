@@ -28,6 +28,12 @@
         visibility:visible;
      
      }
+
+        #icon {
+        width: 30px;
+        color: whitesmoke;
+        fill: whitesmoke;
+    }
     /* Navigation List */
     .nav-list {
         display: flex; /* Use flexbox for alignment */
