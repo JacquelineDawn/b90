@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // home page image fade 
 function fadeInImages() {
     const images = document.querySelectorAll('.fade-image');
-    let delay = 500; // Initial delay set to 0
+    let delay = 100; // Initial delay set to 0
 
     images.forEach((image, index) => {
         setTimeout(() => {
@@ -43,7 +43,7 @@ function fadeInImages() {
 
 function fadeInText() {
     const texts = document.querySelectorAll('.fade-text');
-    let delay = 500; // Initial delay set to 0
+    let delay = 100; // Initial delay set to 0
 
     texts.forEach((text, index) => {
         setTimeout(() => {
