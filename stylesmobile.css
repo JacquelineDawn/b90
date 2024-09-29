@@ -18,7 +18,7 @@
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */
         background-color: black; /* Add a background color if needed */
-        transition: left 0.75s ease; /* Slide-in effect */
+        transition: left 1s ease; /* Slide-in effect */
         z-index: 20; /* Above other elements */
         overflow: hidden; /* Prevent scroll in the nav */
      
@@ -31,8 +31,8 @@
 
         #icon {
         width: 30px;
-        color: whitesmoke;
-        fill: whitesmoke;
+        color: #d5d5d5; 
+        fill: #d5d5d5; 
     }
     /* Navigation List */
     .nav-list {
