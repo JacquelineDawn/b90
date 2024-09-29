@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
 // home page image fade 
 function fadeInImages() {
     const images = document.querySelectorAll('.fade-image');
-    let delay = 100; // Initial delay set to 0
+    let delay = 50; // Initial delay set to 0
 
     images.forEach((image, index) => {
         setTimeout(() => {
             image.classList.add('visible');
         }, delay);
-        delay += 500; // Increase delay for each image (2 seconds apart)
+        delay += 300; // Increase delay for each image (2 seconds apart)
     });
 }
 
@@ -43,13 +43,13 @@ function fadeInImages() {
 
 function fadeInText() {
     const texts = document.querySelectorAll('.fade-text');
-    let delay = 100; // Initial delay set to 0
+    let delay = 50; // Initial delay set to 0
 
     texts.forEach((text, index) => {
         setTimeout(() => {
             text.classList.add('visible');
         }, delay);
-        delay += 500; // Increase delay for each text element (2 seconds apart)
+        delay += 300; // Increase delay for each text element (2 seconds apart)
     });
 }
 
