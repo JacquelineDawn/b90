@@ -21,7 +21,7 @@ h1 {
 h2 { 
   font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
   font-weight: 100;
-  color: #ebebeb;
+  color: #ffffff;
   font-size: 24px;
   letter-spacing: 0.3em;
   line-height: 1.7px;
@@ -32,7 +32,7 @@ h2 {
   h3 { 
     font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    color: #e2e2e2;
+    color: #ffffff;
     font-size: 17.8px;
     line-height: 1.7;
     letter-spacing: 0.3em;
@@ -48,7 +48,7 @@ h2 {
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 2.4px;
-  color: #e2e2e2;
+  color: #ffffff;
  
   }
 
@@ -56,7 +56,7 @@ h2 {
   h5 { 
     font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    color: #d5d5d5;
+    color: #ffffff;
     font-size: 14px;
     letter-spacing: 2.4px;
     line-height: 1.7;
@@ -68,7 +68,7 @@ h2 {
   h6 { 
     font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    color: #e6e6e6;
+    color: #ffffff;
     font-size: 14px;
     letter-spacing: 2.4px;
     line-height: 1.7;
@@ -108,7 +108,7 @@ h2 {
       h2 { 
         font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
         font-weight: 100;
-        color: #f0f0f0;
+        color: #ffffff;
         font-size: 22px;
         letter-spacing: 2.88px;
     
@@ -120,7 +120,7 @@ h2 {
         h3 { 
           font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
           font-weight: 100;
-          color: #f3f3f3;
+          color: #ffffff;
           font-size: 18px;
           letter-spacing: 2.88px; 
           line-height: 40px;
@@ -136,7 +136,7 @@ h2 {
         font-style: normal;
         line-height: normal;
         letter-spacing: 2.88px;
-        color: #bfbfbf;
+        color: #ffffff;
        
         }
     
@@ -144,7 +144,7 @@ h2 {
         h5 { 
           font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
           font-weight: 100;
-          color: #969696;
+          color: #ffffff;
           font-size: 16px;
           letter-spacing: 2.4px;
           line-height: 1.7;
@@ -156,9 +156,9 @@ h2 {
 
         h6 { 
           font-family: "Nunito-ExtraLight", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    color: #969696;
-    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
     letter-spacing: 2.4px;
     line-height: 1.7;
     text-decoration: none;
