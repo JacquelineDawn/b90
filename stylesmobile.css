@@ -68,7 +68,7 @@
     /* Navigation Links */
     .nav-item a {
         width: 100vw; /* Full width for clickable area */
-        padding: 20px 0; /* Vertical padding for spacing */
+        padding: 10px 0; /* Vertical padding for spacing */
         display: flex; /* Flexbox for alignment */
         text-decoration: none; /* Remove underline */
         justify-content: center; /* Center text horizontally */
