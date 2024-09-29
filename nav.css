@@ -73,7 +73,7 @@ header {
     flex-direction: column;
     cursor: pointer;
     position: fixed;
-    right: 35px;
+    right: 40px;
     top: 15px;
     z-index: 12;
     padding: 10px;
