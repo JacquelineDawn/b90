@@ -57,7 +57,7 @@
         z-index: 100; /* Above navigation */
         position: fixed; /* Fixed position */
         top: 35px; /* Adjust position */
-        right: 60px; /* Adjust position */
+        right: 55px; /* Adjust position */
         cursor: pointer; /* Pointer cursor for interaction */
     }
 
