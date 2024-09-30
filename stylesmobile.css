@@ -56,8 +56,8 @@
         display: flex;
         z-index: 100; /* Above navigation */
         position: fixed; /* Fixed position */
-        top: 30px; /* Adjust position */
-        right: 50px; /* Adjust position */
+        top: 50px; /* Adjust position */
+        right: 60px; /* Adjust position */
         cursor: pointer; /* Pointer cursor for interaction */
     }
 
