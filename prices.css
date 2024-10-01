@@ -14,7 +14,7 @@
     width: 100vw;
     height: 100px; 
 
-    margin-top: 220px; 
+    margin-top: 80px; 
 
  
 
@@ -40,7 +40,7 @@
  
   }
 
-  .img4 {
+  .imgblock {
 
     position: relative;
       height: auto;  
@@ -54,7 +54,10 @@
    
     
       border-top: solid 0.25px rgb(141, 141, 141);  
-  
+
+      border: 2px solid pink;
+
+
   }
   
   
