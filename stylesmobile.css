@@ -1,97 +1,468 @@
-@media only screen and (max-width: 767px) {
+
+  
+  
+  @media only screen and (max-width: 767px) {
+
+
+/* GLOBAL STYLES  */ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+}
+
+
+
+body {
+        max-width: 100%; /* Already set */
+        width: 100vw; /* Ensure it covers the full width */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+     
+
+    }
+
+
+    .section {
+
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      align-items: flex-start;
+      gap: 40px;
+      justify-content: center;
+      position: relative;
+      padding: 10px;
+     
+
+
+
+    }
+
+
+    .triple {
+
+      display: block;
+      width: 100%;
+      gap: 40px; 
+      justify-content: center;
+      align-items: center;
+    
+   
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+      padding: 20px; 
+     
+      
+    
+    }
+     
+    
+    
+    .content-block {
+    
+  
+      width: 100%;
+      height: 300px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      padding: 20px; 
+
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+    
+    
+      border: solid 0.1px rgb(138, 138, 138); 
+      border-radius: 5%;
     
 
-    /* Disable scrolling on the body when necessary */
-    .no-scroll {
-        overflow: hidden !important;
-    }
+    
+    
+      }
 
-    /* Navigation Styles */
-    .nav {
-        position: fixed; /* Fix the navigation to the viewport */
-        top: 0; /* Align to the top */
-        left: 100%; /* Start off-screen to the right */
-        display: flex; /* Use flexbox for alignment */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        width: 100vw; /* Full width */
-        height: 100vh; /* Full height */
-        background-color: black; /* Add a background color if needed */
-        transition: left 1s ease; /* Slide-in effect */
-        z-index: 20; /* Above other elements */
-        overflow: hidden; /* Prevent scroll in the nav */
-     
-    }
 
-   #home-dis {
-        visibility:visible;
-     
-     }
+.centerdiv {
 
-        #icon {
-        width: 30px;
-        color: #d5d5d5; 
-        fill: #d5d5d5; 
-        margin: 20px;  
-    }
-    /* Navigation List */
-    .nav-list {
-        display: flex; /* Use flexbox for alignment */
-        flex-direction: column; /* Stack items vertically */
-        width: 100%; /* Full width */
-        height: 100vh; /* Full height for centering */
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        overflow: hidden; /* Prevent scroll in the list */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+ height: auto; 
+  text-align: center;
 
-        background-color: black;
-    }
 
-    /* Hamburger Menu */
-    .hamburger,
-    .close-hamburger {
-        display: flex;
-        z-index: 100; /* Above navigation */
-        position: fixed; /* Fixed position */
-        top: 35px; /* Adjust position */
-        right: 55px; /* Adjust position */
-        cursor: pointer; /* Pointer cursor for interaction */
-    }
 
-    /* Active Navigation */
-    .nav.active {
-        left: 0; /* Slide in from the right */
-    }
-
-    /* Navigation Links */
-    .nav-item a {
-        width: 100vw; /* Full width for clickable area */
-        padding: 10px 0; /* Vertical padding for spacing */
-        display: flex; /* Flexbox for alignment */
-        text-decoration: none; /* Remove underline */
-        justify-content: center; /* Center text horizontally */
-        align-items: center; /* Center text vertically */
-        background-color: #fff; /* Optional: add background to links */
-
-        background-color: black; 
-    }
-
-    /* Logo Styling */
-    .logo {
-        display: flex; /* Use flexbox for alignment */
-        align-items: center; /* Vertically center the logo and text */
-        position: fixed; /* Fixed position */
-        top: 20px; /* Adjust position as needed */
-        left: 20px; /* Adjust position as needed */
-        z-index: 30; /* Above navigation */
-    }
-
-    .logo img {
-        width: 25px; /* Set desired width of the logo */
-        height: auto; /* Maintain aspect ratio */
-        vertical-align: middle; /* Align with text */
-    }
 }
+#methodblock-1 {
+  display: block;
+  width: 100%;
+  gap: 40px;
+
+}
+
+#methodblock-2{
+  display: block;
+  width: 100%;
+  gap: 40px;
+
+}
+
+
+
+  .content-block-left {
+
+    display: block;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    width: 100%; 
+    gap: 40px; 
+
+    }
+  
+
+  
+  .img1 {
+     
+      visibility: collapse; 
+  
+  }
+  
+  .img2 {
+     
+    visibility: collapse; 
+ 
+}
+
+.img3 {
+  visibility: collapse; 
+   
+
+}
+  
+
+
+
+
+
+
+
+.imgblock {
+
+  position: relative;
+    height: auto;  
+    width: 100vw;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+
+  
+
+
+}
+
+
+
+.schedule {
+  
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center; /* Centers content within the schedule */
+
+}
+
+
+
+
+.footer {
+
+  max-width: 100%; 
+  display: flex; 
+  align-items: center;
+  justify-content: left;
+  margin-top: 120px; 
+  padding: 5%;
+
+  display: flex;
+ flex-wrap: wrap;
+
+ max-width: 100vw; /
+    
+    
+  }
+
+  .footer__brand {
+   visibility:visible;
+   margin-bottom: 40px;
+
+   
+   } 
+
+ 
+ 
+
+.footer__divs {
+
+ display: flex;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ gap: 40px;
+ width: 100%;
+
+
+}
+
+.footer__div {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ gap: 40px;
+ text-align: left; /* Align all items to the left */
+
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    /* TYPOGRAPHY  */
+  
+    h1 { 
+        font-family: 'Pavanam', sans-serif;
+      font-weight: 100;
+      color: #ffffff;
+      font-size: 36px;
+      letter-spacing: 2.88px;
+      line-height: 56px;
+      text-transform: uppercase;
+    
+    }
+
+
+
+  
+    h2 { 
+        font-family: 'Pavanam', sans-serif;
+      font-weight: 100;
+      color: #f0f0f0;
+      font-size: 22px;
+      letter-spacing: 2.88px;
+  
+  
+    }
+
+
+
+      h3 { 
+        font-family: 'Pavanam', sans-serif;
+        font-weight: 100;
+        color: #f3f3f3;
+        font-size: 18px;
+        letter-spacing: 2.88px; 
+        line-height: 40px;
+      
+       
+    
+      }
+    
+      h4 { 
+        font-family: 'Pavanam', sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2.88px;
+      color: #bfbfbf;
+     
+      }
+  
+  
+      h5 { 
+        font-family: 'Pavanam', sans-serif;
+        font-weight: 100;
+        color: #969696;
+        font-size: 16px;
+        letter-spacing: 2.4px;
+        line-height: 1.7;
+        text-decoration: none;
+        
+       
+    
+      }
+
+      h6 { 
+        font-family: 'Pavanam', sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 1.7;
+  text-decoration: none;
+        
+       
+    
+    }
+
+    /* ICON */
+
+    #icon {
+        width: 20px;
+        color: #ffffff;
+        fill: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+  /* NAV + HEADER + HAMBURGER */ 
+  
+  /* Disable scrolling on the body when necessary */
+  .no-scroll {
+    overflow: hidden !important;
+}
+
+/* Navigation Styles */
+.nav {
+    position: fixed; /* Fix the navigation to the viewport */
+    top: 0; /* Align to the top */
+    left: 100%; /* Start off-screen to the right */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: black; /* Add a background color if needed */
+    transition: left 1s ease; /* Slide-in effect */
+    z-index: 20; /* Above other elements */
+    overflow: hidden; /* Prevent scroll in the nav */
+ 
+}
+
+#home-dis {
+    visibility:visible;
+ 
+ }
+
+    #icon {
+    width: 30px;
+    color: #d5d5d5; 
+    fill: #d5d5d5; 
+    margin: 20px;  
+}
+/* Navigation List */
+.nav-list {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height for centering */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scroll in the list */
+
+    background-color: black;
+}
+
+/* Hamburger Menu */
+.hamburger,
+.close-hamburger {
+    display: flex;
+    z-index: 100; /* Above navigation */
+    position: fixed; /* Fixed position */
+    top: 35px; /* Adjust position */
+    right: 55px; /* Adjust position */
+    cursor: pointer; /* Pointer cursor for interaction */
+}
+
+/* Active Navigation */
+.nav.active {
+    left: 0; /* Slide in from the right */
+}
+
+/* Navigation Links */
+.nav-item a {
+    width: 100vw; /* Full width for clickable area */
+    padding: 10px 0; /* Vertical padding for spacing */
+    display: flex; /* Flexbox for alignment */
+    text-decoration: none; /* Remove underline */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    background-color: #fff; /* Optional: add background to links */
+
+    background-color: black; 
+}
+
+/* Logo Styling */
+.logo {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the logo and text */
+    position: fixed; /* Fixed position */
+    top: 20px; /* Adjust position as needed */
+    left: 20px; /* Adjust position as needed */
+    z-index: 30; /* Above navigation */
+}
+
+.logo img {
+    width: 25px; /* Set desired width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text */
+}
+
+
+
+
+
+
+ 
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
